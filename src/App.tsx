@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {
   QueryClient,
   QueryClientProvider,
@@ -10,8 +9,6 @@ const queryClient = new QueryClient()
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <QueryClientProvider client={queryClient}>
       <MobileWrapper>
